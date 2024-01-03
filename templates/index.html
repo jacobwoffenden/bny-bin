@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Next Bin Collection</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Next Bin Collection</h1>
+    {% if multiple_bins %}
+        <p>The next bin collection is on {{ date }} and the bin colours are {{ colour }}.</p>
+    {% else %}
+        <p>The next bin collection is on {{ date }} and the bin colour is {{ colour }}.</p>
+    {% endif %}
+</body>
+</html>
